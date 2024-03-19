@@ -24,7 +24,17 @@
         const REGEX_LUTHFI = new RegExp("^[a-z0-9]+$");
 
         regexInputLuthfi.addEventListener("input", () => {
-            if(REGEX_LUTHFI.test(regexInputLuthfi.value)){
+            if(regexInputLuthfi.value === ""){
+                luhtfiValidasi.classList.remove("text-green-500");
+                luhtfiValidasi.classList.remove("text-red-500");
+                regexInputLuthfi.classList.add("focus:ring-indigo-600");
+                regexInputLuthfi.classList.remove("focus:ring-red-500");
+                regexInputLuthfi.classList.remove("focus:ring-green-500");
+                regexInputLuthfi.classList.add("ring-grey-300");
+                regexInputLuthfi.classList.remove("ring-red-500");
+                regexInputLuthfi.classList.remove("ring-green-500");
+                luhtfiValidasi.innerHTML = "";
+            }else if(REGEX_LUTHFI.test(regexInputLuthfi.value)){
                 luhtfiValidasi.classList.add("text-green-500");
                 luhtfiValidasi.classList.remove("text-red-500");
                 regexInputLuthfi.classList.remove("focus:ring-indigo-600");
