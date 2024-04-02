@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../assets/img/logo-kampus-merdeka.png" type="image/x-icon">
 </head>
 <body>
-    <!-- header small -->
+    <!-- small header -->
     <header class="lg:hidden">
         <nav class="bg-black px-4 py-3 flex justify-between items-center">
             <div class="flex">
@@ -49,9 +49,9 @@
         </div>
         <div id="bg-burger" class="absolute top-0 left-0 right-0 h-screen opacity-70 bg-gray-800 z-10 hidden"></div>
     </header>
-    <!-- header laptop -->
-    <header class="lg:block hidden">
-        <nav class="flex px-16 py-[20px] bg-black h-auto items-center justify-between">
+    <!-- large header -->
+    <header class="lg:block hidden bg-black">
+        <nav class="flex px-16 py-[20px] h-auto items-center justify-between lg:max-w-screen-xl lg:mx-auto">
             <div class="flex cursor-pointer">
                 <img src="../assets/img/logo-pendidikan.png" alt="logo" class="w-[40px] h-[40px] mr-3">
                 <img src="../assets/img/logo-kampus-merdeka.png" alt="logo" class="w-[76px] h-[40px]">
@@ -67,8 +67,9 @@
             </div>
         </nav>
     </header>
-    <div class="lg:block hidden">
-        <div class="flex px-16 bg-gray-50">
+    <!-- large navigation -->
+    <div class="lg:block hidden bg-gray-50">
+        <div class="flex px-16 lg:max-w-screen-xl lg:mx-auto">
             <div class="p-4 flex gap-x-3 items-center w-1/5 hover:text-blue-500 hover:bg-gray-100 hover:fill-blue-500 cursor-pointer">
                 <span class="font-bold">Kampus Mengajar</span>
                 <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"/></svg>
@@ -91,12 +92,14 @@
         </div>
     </div>
     <main class="py-7 px-4 bg-gray-50 lg:justify-center lg:flex">
-        <div class="lg:flex lg:flex-col lg:w-11/12">
-            <p class="font-bold text-2xl mb-4 lg:text-4xl lg:mb-6">Program Kampus Merdeka</p>
-            <div class="lg:flex lg:flex-wrap lg:gap-3">
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/kampus-mengajar-logo.jpg" alt="logo-kampus-mengajar">
+        <div class="lg:max-w-screen-xl lg:justify-center lg:flex">
+            <div class="lg:flex lg:flex-col lg:w-11/12">
+                <p class="font-bold text-2xl mb-4 lg:text-4xl lg:mb-6">Program Kampus Merdeka</p>
+                <div class="lg:flex lg:flex-wrap lg:gap-3">
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/kampus-mengajar-logo.jpg" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Kampus Mengajar</p>
                         <p>
                             Bantu peningkatan kualitas pendidikan dasar dengan terlibat langsung  pada proses pengajaran di sekolah-sekolah yang berlokasi di seluruh daerah di Indonesia.
@@ -112,10 +115,10 @@
                             <svg class="w-[20px] h-[20px] fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/msib-logo.jpg" alt="logo-kampus-mengajar">
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/msib-logo.jpg" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Magang MSIB</p>
                         <p>
                             Dapatkan pengalaman dunia kerja secara langsung sebagai persiapan kariermu.
@@ -132,10 +135,10 @@
                             <svg class="w-[20px] h-[20px] fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/msib-logo.jpg" alt="logo-kampus-mengajar">
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/msib-logo.jpg" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Studi Independen</p>
                         <p>
                             Jalankan proyek penelitian dengan studi kasus nyata dari para pelaku industri ternama.
@@ -153,10 +156,10 @@
                             <svg class="w-[20px] h-[20px] fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/pmm-logo.webp" alt="logo-kampus-mengajar">
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/pmm-logo.webp" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Pertukaran Mahasiswa Merdeka</p>
                         <p>
                             Program pertukaran mahasiswa dalam negeri  yang memberikan pengalaman langsung untuk lebih memaknai keberagaman budaya nusantara.
@@ -172,10 +175,10 @@
                             <svg class="w-[20px] h-[20px] fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/wmk-logo.webp" alt="logo-kampus-mengajar">
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/wmk-logo.webp" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Wirausaha Merdeka</p>
                         <p>
                             Ikuti program unggulan dari berbagai Perguruan Tinggi yang bertujuan untuk meningkatkan kemampuan wirausaha.
@@ -186,10 +189,10 @@
                             <svg class="w-[20px] h-[20px] fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/iisma-logo.webp" alt="logo-kampus-mengajar">
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/iisma-logo.webp" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Indonesian International Student Mobility Awards</p>
                         <p>
                             Program pertukaran dengan universitas lain dari seluruh dunia untuk bertukar budaya.
@@ -205,10 +208,10 @@
                             <svg class="w-[20px] h-[20px] fill-blue-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
                         </div>
                     </div>
-                </div>
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/praktisi-mengajar-logo.webp" alt="logo-kampus-mengajar">
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-4 lg:mb-0 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/praktisi-mengajar-logo.webp" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Praktisi Mengajar</p>
                         <p>
                             Ruang kolaborasi antara Praktisi sebagai representasi industri dengan dosen Perguruan Tinggi dalam bentuk pengajaran mata kuliah agar mahasiswa lebih siap untuk masuk ke dunia kerja.
@@ -220,13 +223,13 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <hr class="my-6 h-[2px] bg-gray-200">
-            <div class="lg:flex lg:flex-col lg:gap-3">
-                <p class="font-bold text-2xl mb-4 lg:text-4xl">Kegiatan Lainnya</p>
-                <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-14 lg:w-[32.5%]">
-                    <div class="">
-                        <img class="w-32" src="../assets/img/logo-mandiri.webp" alt="logo-kampus-mengajar">
+                <hr class="my-6 h-[2px] bg-gray-200">
+                <div class="lg:flex lg:flex-col lg:gap-3">
+                    <p class="font-bold text-2xl mb-4 lg:text-4xl">Kegiatan Lainnya</p>
+                    <div class="bg-white w-full h-auto rounded-xl shadow-lg p-4 mb-14 lg:w-[32.45%]">
+                        <div class="lg:flex justify-center">
+                            <img class="w-32" src="../assets/img/logo-mandiri.webp" alt="logo-kampus-mengajar">
+                        </div>
                         <p class="font-bold text-xl mt-2">Magang Mandiri</p>
                         <p>
                             Temukan pengalaman dunia kerja yang dikelola langsung oleh perusahaan tanpa ada batasan kuota dan jadwal yang lebih fleksibel.
@@ -242,6 +245,7 @@
             </div>
         </div>
     </main>
+    <!-- small footer -->
     <footer class="fixed bottom-0 w-screen flex bg-white py-2 lg:hidden">
         <div class="flex flex-wrap w-1/4 justify-center">
             <svg class="w-5 h-5 fill-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
@@ -260,8 +264,9 @@
             <p class="w-full text-center text-gray-400 text-sm">Masuk</p>
         </div>
     </footer>
+    <!-- large footer -->
     <footer class="bg-black text-white p-[80px] lg:block hidden">
-        <div class="w-full flex gap-24">
+        <div class="w-full flex gap-24 lg:max-w-screen-xl lg:mx-auto">
             <img src="../assets/img/logo-pendidikan.png" alt="logo" class="w-28 h-28">
             <div class="w-1/2">
                 <p class="text-lg font-bold">
