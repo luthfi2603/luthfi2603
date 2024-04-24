@@ -23,7 +23,7 @@
         let regexInputLuthfi = document.getElementById("input");
         let luhtfiValidasi = document.getElementById("validasi");
 
-        const REGEX_LUTHFI = new RegExp("^[a-z0-9]+$");
+        const REGEX_LUTHFI = new RegExp("^[a-z0-9]+$"); // ^([A-Z][a-z]+\\s)*([A-Z][a-z]+)$
 
         regexInputLuthfi.addEventListener("input", () => {
             if(regexInputLuthfi.value === ""){
