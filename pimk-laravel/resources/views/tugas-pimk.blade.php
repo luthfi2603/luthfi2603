@@ -5,8 +5,8 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Verified</th>
-            </tr>
-            @foreach($users as $user)
+            </tr>@dd($users)
+            @foreach($users as $user)@dd($user)
                 <tr>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
@@ -21,4 +21,9 @@
             @endforeach
         </table>
     </div>
+    @push('scripts')
+        <script>
+            cons test = document.getElementById("test");
+        </script>
+    @endpush
 </x-app-layout>

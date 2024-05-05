@@ -9,6 +9,6 @@ class ViewController extends Controller {
     public function index(){
         $users = User::all();
 
-        return view('tugas-pimk', compact('users'));
+        return $users;
     }
 }
