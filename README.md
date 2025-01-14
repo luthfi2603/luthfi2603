@@ -6,7 +6,7 @@
 Here are some ideas to get you started:
 -->
 
-I'm Muhammad Luthfi, a second year IT student at University of North Sumatra.
+I'm Muhammad Luthfi, a third year IT student at University of North Sumatra.
 
 - 🌱 I’m currently learning Java GUI
 - 💬 Ask me about PHP Native, Laravel, C++, and JavaScript. I know a little bit of that :D
